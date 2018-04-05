@@ -1,0 +1,19 @@
+<div class="wrapper">
+  <div class="card">
+    <div class="image_box">
+      <%= image_tag("brown_candle.jpg", class: "profile")%>
+    </div>
+
+    <div class="title">
+      <% if !flash["err"] %>
+        Welcome to BROWN's Birthday!
+      <% else %>
+        <%= flash["err"] %>
+      <% end %>
+    </div>
+
+    <div class="welcome">
+      Have a good time <%= @name %> :)
+    </div>
+  </div>
+</div>
